@@ -7,7 +7,6 @@
 # b = ['Beginn{}'.format(number) for number in spisok]
 # print(b)
 
-# test comment
 
 
 # foods = ['pie','apple','bread']
