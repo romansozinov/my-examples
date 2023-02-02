@@ -1,6 +1,6 @@
 text = ("<div class=\"equipment-row\">\n<div class=\"equipment-left\">\n<div class=\"equipment-title\">Базовая комплектация</div>\n<div class=\"equipment-text\"><table height=\"90\" style=\"font: 14px segoe ui\" width=\"375\">\n<tbody>\n<tr style=\"background-color:#f7f7f7\">\n<td width=\"80%\"><ul><li>Дно</li></ul></td>\n<td style=\"text-align: right\" width=\"20%\">1 шт.</td>\n</tr>\n<tr>\n<td><ul><li>Боковая стенка</li></ul></td>\n<td style=\"text-align: right\">2 шт.</td>\n</tr>\n<tr style=\"background-color:#f7f7f7\">\n<td><ul><li>Стойка</li></ul></td>\n<td style=\"text-align: right\">2 шт.</td>\n</tr>\n</tbody>\n</table></div>\n</div>\n<div class=\"equipment-right\">\n<div class=\"equipment-title\">Дополнительные товары</div>\n<div class=\"equipment-text\"><table height=\"30\" style=\"font: 14px segoe ui\" width=\"375\">\n<tbody>\n<tr style=\"background-color:#f7f7f7\">\n<td><ul><li>Сумка для переноски</li></ul></td>\n</tr>\n</tbody>\n</table></div>\n</div>\n</div>")
 
-for tag in text.find_all():
+for tag in text.find_all(),:
     if 'style' in tag.attrs:
         del tag.attrs['style']
 

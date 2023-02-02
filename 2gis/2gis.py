@@ -23,12 +23,12 @@ def main():
     # ### END конвертируем CSV в формат parquet для ускорения работы с таблицами в 10 раз
 
     st = time.time()
-    df1 = dd.read_csv(f'examples/2gis/{filename}')
+    df1 = dd.read_csv(f'/Users/romansozinov/MyProjects/GitHub my projects/my-examples/2gis/{filename}')
     print(df1['B'].mean().compute())
     print(time.time() - st)
 
     st = time.time()
-    df2 = dd.read_parquet(f'examples/2gis/100m_parquet/part.*.parquet')
+    df2 = dd.read_parquet(f'/Users/romansozinov/MyProjects/GitHub my projects/my-examples/2gis/100m_parquet/part.*.parquet')
     print(df2['B'].mean().compute())
     print(time.time() - st)    
 

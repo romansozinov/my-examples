@@ -13,7 +13,7 @@ text_search = "<div class=\"additional-attributes-wrapper table-wrapper\"><table
 start = "<div class=\"additional-attributes-wrapper table-wrapper\">"
 end = "<\/div>"
 text = (str(text_search).split(start)[-1].split(end)[0]) 
-
+print(type(text))
 print(text) # NDL2894
 
     

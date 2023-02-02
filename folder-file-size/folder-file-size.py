@@ -22,7 +22,7 @@ from datetime import datetime
 
 
 # считаем и выводим данные о файлах в папке
-folder = 'folder-file-size/folder/'
+folder = 'my-examples/folder-file-size/folder'
 for name in listdir(folder):
     full_name = path.join(folder, name)
     
